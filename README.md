@@ -13,14 +13,6 @@ This module manages the `/etc/motd` on Unix-like systems. Unlike other motd modu
 this one created a bulleted list of services offered by that system by specifying a
 resource anywhere that needs it.
 
-```
-class { 'dns':
-  ...
-  ...
-  motd::register { 'DNS': }
-}
-```
-
 Sample output:
 
 ```
@@ -92,10 +84,15 @@ If `display_qotd` is set to `true`, give the author for your quotation here. Def
 ## `motd::register`
 
 To include a service on the bulleted service list in the motd, call the defined
-resource like this:
+resource like this from within the relevant class.
 
 ```puppet
-motd::register { 'DNS': }
+class { 'dns':
+  ...
+  ...
+  motd::register { 'DNS': }
+}
+
 ```
 
 ## Limitations
