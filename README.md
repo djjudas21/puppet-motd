@@ -3,18 +3,23 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-4. [Usage - Configuration options and additional functionality](#usage)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+2. [Usage - Configuration options and additional functionality](#usage)
+3. [Limitations - OS compatibility, etc.](#limitations)
+4. [Development - Guide for contributing to the module](#development)
 
 ## Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
-
 This module manages the `/etc/motd` on Unix-like systems. Unlike other motd modules,
-this one created a bulleted list of services offered by that system.
+this one created a bulleted list of services offered by that system by specifying a
+resource anywhere that needs it.
+
+```
+class { 'dns':
+  ...
+  ...
+  motd::register { 'DNS': }
+}
+```
 
 Sample output:
 
