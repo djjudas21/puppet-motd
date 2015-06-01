@@ -16,6 +16,27 @@ OS/Puppet version it works with.
 This module manages the `/etc/motd` on Unix-like systems. Unlike other motd modules,
 this one created a bulleted list of services offered by that system.
 
+Sample output:
+
+```
+  **************************************************************************
+  *
+  *   DEMO.BRIS.AC.UK
+  *
+  *   Queries about this system to: demo-help@bristol.ac.uk
+  *   This system is managed by Puppet. Check before editing!
+  *
+  *   "640K ought to be enough for anyone."
+  *           Bill Gates
+  *
+  *   This server provides the following services:
+  *     - DNS
+  *     - DHCP
+  *     - TFTP
+  *
+  **************************************************************************
+```
+
 ## Usage
 
 ## `motd`
@@ -63,10 +84,10 @@ If `display_qotd` is set to `true`, provide the text for your quotation here. De
 If `display_qotd` is set to `true`, give the author for your quotation here. Default: `undef`. Example: `Bill Gates`
 
 
+## `motd::register`
+
 To include a service on the bulleted service list in the motd, call the defined
 resource like this:
-
-## `motd::register`
 
 ```puppet
 motd::register { 'DNS': }
