@@ -109,3 +109,7 @@ Feel free to send pull requests to make this module more flexible.
 ### `0.1.0`
 
 Initial release
+
+### `0.1.1`
+
+Packaging release, simply to take account of concat 2.x being deleted from the Forge
