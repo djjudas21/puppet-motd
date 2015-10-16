@@ -50,7 +50,7 @@ class motd (
   if ($display_puppet_env) {
     concat::fragment { 'motd_puppet_env':
       target  => $path,
-      content => "  *   Puppet environment: ${environment}\n",
+      content => "  *\n  *   Puppet environment: ${environment}\n",
       order   => 04,
     }
   }
