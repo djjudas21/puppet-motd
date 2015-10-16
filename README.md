@@ -45,6 +45,7 @@ class motd {
   path                   => '/etc/motd',
   display_hostname       => true,
   display_puppet_warning => true,
+  display_puppet_env     => false,
   display_qotd           => false,
   contact_email          => undef,
   qotd_text              => undef,
@@ -63,6 +64,10 @@ Whether to display the server's hostname on the motd message. Default: `true`
 ### `display_puppet_warning`
 
 Whether to display a generic warning that this server is managed by Puppet. Default: `true`
+
+### `display_puppet_env`
+
+Whether to display which Puppet environment the node is in
 
 ### `display_qotd`
 

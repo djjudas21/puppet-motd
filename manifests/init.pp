@@ -3,6 +3,7 @@ class motd (
   $path = '/etc/motd',
   $display_hostname = true,
   $display_puppet_warning = true,
+  $display_puppet_env = false,
   $display_qotd = false,
   $contact_email = undef,
   $qotd_text = undef,
@@ -42,6 +43,14 @@ class motd (
     concat::fragment { 'motd_puppet':
       target  => $path,
       content => "  *   This system is managed by Puppet. Check before editing!\n",
+      order   => 04,
+    }
+  }
+
+  if ($display_puppet_env) {
+    concat::fragment { 'motd_puppet_env':
+      target  => $path,
+      content => "  *   Puppet environment: ${environment}\n",
       order   => 04,
     }
   }
