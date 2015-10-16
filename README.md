@@ -118,3 +118,7 @@ Initial release
 ### `0.1.1`
 
 Packaging release, simply to take account of concat 2.x being deleted from the Forge
+
+### `0.1.2`
+
+Add support for displaying the Puppet environment
