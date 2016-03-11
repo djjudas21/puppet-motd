@@ -50,6 +50,8 @@ class motd {
   contact_email          => undef,
   qotd_text              => undef,
   qotd_author            => undef,
+  char                   => '*',
+  width                  => 76,
 }
 ```
 
@@ -84,6 +86,14 @@ If `display_qotd` is set to `true`, provide the text for your quotation here. De
 ### `qotd_author`
 
 If `display_qotd` is set to `true`, give the author for your quotation here. Default: `undef`. Example: `Bill Gates`
+
+### `char`
+
+Set the character to be used to draw a box around the motd. Default: `*`
+
+### `width`
+
+Set the width of the motd message. Default: `76`
 
 
 ## `motd::register`

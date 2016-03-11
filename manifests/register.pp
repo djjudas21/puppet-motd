@@ -8,8 +8,9 @@ define motd::register($content='', $order=10) {
     $body = $content
   }
 
+  $body_sprint = sprintf("%-${motd::printwidth}s", "  - ${body}")
   concat::fragment{"motd_fragment_${name}":
     target  => '/etc/motd',
-    content => "  *     - ${body}\n"
+    content => "  ${motd::char}   ${body_sprint}   ${motd::char}\n",
   }
 }
