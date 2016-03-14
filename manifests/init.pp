@@ -105,7 +105,7 @@ class motd (
   # Bottom edge of box
   concat::fragment { 'motd_footer':
     target  => $path,
-    content => "${blank}${edge}",
+    content => "${blank}${edge}\n",
     order   => '20',
   }
 }
