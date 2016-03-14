@@ -136,3 +136,7 @@ Add support for displaying the Puppet environment
 ### `0.2.0`
 
 Add support for varible width, four-sided box, customisable characters
+
+### `0.2.1`
+
+Add trailing newline

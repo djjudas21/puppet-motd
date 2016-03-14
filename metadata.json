@@ -1,6 +1,6 @@
 {
   "name": "jgazeley/motd",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "jgazeley",
   "summary": "Manage the MOTD message",
   "license": "Apache-2.0",
