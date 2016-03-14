@@ -132,3 +132,7 @@ Packaging release, simply to take account of concat 2.x being deleted from the F
 ### `0.1.2`
 
 Add support for displaying the Puppet environment
+
+### `0.2.0`
+
+Add support for varible width, four-sided box, customisable characters
