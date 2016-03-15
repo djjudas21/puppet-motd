@@ -16,22 +16,25 @@ resource anywhere that needs it.
 Sample output:
 
 ```
-  **************************************************************************
-  *
-  *   DEMO.BRIS.AC.UK
-  *
-  *   Queries about this system to: demo-help@bristol.ac.uk
-  *   This system is managed by Puppet. Check before editing!
-  *
-  *   "640K ought to be enough for anyone."
-  *           Bill Gates
-  *
-  *   This server provides the following services:
-  *     - DNS
-  *     - DHCP
-  *     - TFTP
-  *
-  **************************************************************************
+  ******************************************************************************
+  *                                                                            *
+  *   DEMO.BRIS.AC.UK                                                          *
+  *                                                                            *
+  *   Queries about this system to: demo-help@bristol.ac.uk                    *
+  *                                                                            *
+  *   This system is managed by Puppet. Check before editing!                  *
+  *                                                                            *
+  *   Puppet environment: production                                           *
+  *                                                                            *
+  *   "640K ought to be enough for anyone."                                    *
+  *          Bill Gates                                                        *
+  *                                                                            *
+  *   This server provides the following services:                             *
+  *     - DNS                                                                  *
+  *     - DHCP                                                                 *
+  *     - TFTP                                                                 *
+  *                                                                            *
+  ******************************************************************************
 ```
 
 ## Usage
@@ -93,7 +96,7 @@ Set the character to be used to draw a box around the motd. Default: `*`
 
 ### `width`
 
-Set the width of the motd message. Default: `76`
+Set the width of the motd message. Default: `80`
 
 
 ## `motd::register`
