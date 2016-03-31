@@ -49,7 +49,7 @@ class motd (
     concat::fragment { 'motd_email':
       target  => $path,
       content => "  ${char}   ${email_sprint}   ${char}\n${blank}",
-      order   => 05,
+      order   => 04,
     }
   }
 
@@ -70,7 +70,7 @@ class motd (
     concat::fragment { 'motd_puppet':
       target  => $path,
       content => "  ${char}   ${puppet_warning_sprint}   ${char}\n${blank}",
-      order   => 04,
+      order   => 05,
     }
   }
 
