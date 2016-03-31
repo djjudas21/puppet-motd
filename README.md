@@ -143,3 +143,8 @@ Add support for varible width, four-sided box, customisable characters
 ### `0.2.1`
 
 Add trailing newline
+
+### `0.2.2`
+
+Fix ambiguous ordering
+Add validation for single character input
