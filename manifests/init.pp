@@ -17,6 +17,9 @@ class motd (
 # *   18 printable chars   *  Total width 28 chars
 # **************************
 
+  # Check we're only using a single character to draw the box
+  validate_slength($char, 1, 1)
+
   $boxwidth = $width-2
   $printwidth = $boxwidth-8
 
