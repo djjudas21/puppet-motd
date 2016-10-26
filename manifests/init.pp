@@ -40,7 +40,7 @@ class motd (
   concat::fragment { 'motd_top':
     target  => $path,
     content => "${edge}\n${blank}",
-    order   => 02,
+    order   => '02',
   }
 
   # Contact info
@@ -49,7 +49,7 @@ class motd (
     concat::fragment { 'motd_email':
       target  => $path,
       content => "  ${char}   ${email_sprint}   ${char}\n${blank}",
-      order   => 04,
+      order   => '04',
     }
   }
 
@@ -60,7 +60,7 @@ class motd (
     concat::fragment { 'motd_fqdn':
       target  => $path,
       content => "  ${char}   ${fqdn_sprint}   ${char}\n${blank}",
-      order   => 03,
+      order   => '03',
     }
   }
 
@@ -70,7 +70,7 @@ class motd (
     concat::fragment { 'motd_puppet':
       target  => $path,
       content => "  ${char}   ${puppet_warning_sprint}   ${char}\n${blank}",
-      order   => 05,
+      order   => '05',
     }
   }
 
@@ -80,7 +80,7 @@ class motd (
     concat::fragment { 'motd_puppet_env':
       target  => $path,
       content => "  ${char}   ${puppet_env_sprint}   ${char}\n${blank}",
-      order   => 06,
+      order   => '06',
     }
   }
 
@@ -93,7 +93,7 @@ class motd (
     concat::fragment { 'motd_qotd':
       target  => $path,
       content => "  ${char}   ${qotd_text_sprint}   ${char}\n  ${char}   ${qotd_author_sprint}   ${char}\n",
-      order   => 07,
+      order   => '07',
     }
   }
 
@@ -102,7 +102,7 @@ class motd (
   concat::fragment { 'motd_services':
     target  => $path,
     content => "${blank}  ${char}   ${services_sprint}   ${char}\n",
-    order   => 08,
+    order   => '08',
   }
 
   # Bottom edge of box
