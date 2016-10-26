@@ -148,3 +148,7 @@ Add trailing newline
 
 Fix ambiguous ordering
 Add validation for single character input
+
+### `0.2.3`
+
+Quote numbers for future parser validation
