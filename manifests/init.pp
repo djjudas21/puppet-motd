@@ -24,10 +24,10 @@ class motd (
   $printwidth = $boxwidth - 8
 
   # Calculate a blank line, i.e. two chars with no text
-  $blank = inline_template("  <%= @char %><% for x in (3..boxwidth) %> <% end%><%= @char %>\n")
+  $blank = inline_template("  <%= @char %><% for x in (3..@boxwidth) %> <% end%><%= @char %>\n")
 
   # Calculate a top or bottom edge row of chars
-  $edge = inline_template('  <% for x in (1..boxwidth) %><%= @char %><% end %>')
+  $edge = inline_template('  <% for x in (1..@boxwidth) %><%= @char %><% end %>')
 
   # Location of motd file
   concat { $path:
