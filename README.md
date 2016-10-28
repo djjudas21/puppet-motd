@@ -152,3 +152,7 @@ Add validation for single character input
 ### `0.2.3`
 
 Quote numbers for future parser validation
+
+### `0.2.4`
+
+Access variables properly
